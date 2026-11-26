@@ -1,4 +1,5 @@
-﻿import "./App.css";
+﻿import LiveTranscript from "./components/LiveTranscript";
+import "./App.css";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <main className="page-body">
         <section className="panel">
           <h2>Live transcript</h2>
-          <p className="placeholder">Recorder coming in the next stage.</p>
+          <LiveTranscript />
         </section>
 
         <section className="panel">
