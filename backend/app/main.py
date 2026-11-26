@@ -2,6 +2,7 @@
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.routes_transcriptions import router as transcriptions_router
+from app.api.routes_ws import router as ws_router
 from app.core.config import get_settings
 
 settings = get_settings()
@@ -17,6 +18,7 @@ app.add_middleware(
 )
 
 app.include_router(transcriptions_router)
+app.include_router(ws_router)
 
 
 @app.get("/api/health")
