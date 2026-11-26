@@ -76,6 +76,9 @@ function HistoryTable({ refreshKey }) {
                 <button type="button" onClick={() => removeRow(row.id)}>
                   Delete
                 </button>
+                <button type="button" disabled title="Coming soon">
+                  🔊 Play as speech
+                </button>
               </div>
             </>
           )}
